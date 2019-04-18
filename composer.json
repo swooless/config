@@ -1,0 +1,29 @@
+{
+  "name": "swooless/config",
+  "description": "Configuration center",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Swooless\\Config\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Swooless\\Config\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "傅双亮",
+      "email": "shuangliang.fu@baozun.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1.0"
+  },
+  "require-dev": {
+    "liron-li/php-zookeeper-ide-helper": "^0.1.0",
+    "phpunit/phpunit": "^7.5"
+  }
+}
