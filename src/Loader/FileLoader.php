@@ -48,6 +48,15 @@ class FileLoader implements LoaderInterface
             while (!feof($fp)) {
                 $line = fgets($fp, 1024);
 
+                if (!is_string($line)) {
+                    continue;
+                }
+
+                $line = trim($line);
+                if (empty(trim($line))) {
+                    continue;
+                }
+
                 $index = strpos($line, '=');
 
                 if (false === $index) {
